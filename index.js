@@ -6,20 +6,20 @@ class Cake {
         this.decoration = decoration;
     }
     
-    let birthdayCake = new Cake
-    birthdayCake.describe() {
-        console.log("A delicious vanilla cake, with mint icing, and a candle");
+    describe() {
+        console.log(`It's a ${this.flavor} cake, with ${this.icing} icing, 
+        and ${this.decoration}`);
     }
 }
 
-const strawberryCake = new Cake(""
-)
-
-
-
 
 let chocolateCake = new Cake("chocolate", "caramel", "sprinkles");
-
 chocolateCake.describe();
 // Should print:
 // 'It is a chocolate cake, with caramel frosting, and sprinkles'
+
+let strawberryCake = new Cake("strawberry", "vanilla", "strawberry pieces");
+strawberryCake.describe();
+
+let birthdayCake = new Cake("vanilla", "chocolate", "candle");
+birthdayCake.describe(); 
